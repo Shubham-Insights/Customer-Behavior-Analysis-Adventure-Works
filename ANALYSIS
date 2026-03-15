@@ -1,0 +1,81 @@
+# 📋 Project Analysis — Customer Behavior & Lifecycle Analysis
+
+---
+
+## ❓ Problem Statement
+
+Adventure Works had customer data spread across multiple tables with
+no unified view of customer behavior, retention risk, or profitability.
+Key business questions were going unanswered:
+
+- Which customers are at risk of churning and need re-engagement?
+- Who are the high-value customers driving the most revenue?
+- How engaged and active is the overall customer base?
+- Which regions and products are actually profitable?
+
+Without answers to these questions, the marketing and sales teams
+had no data-driven basis to prioritise their efforts or design
+targeted campaigns.
+
+---
+
+## ✅ How I Solved It
+
+**1. Churn Risk & Retention Detection**
+Identified customers inactive for more than 30 days using a DATEDIFF
+calculated field and flagged them as Churn Risk. Out of 18,484
+customers, 4,285 were found to be Loyal but Inactive and 2,781 were
+New but Inactive — together forming a high-risk group that needed
+immediate re-engagement action from the marketing team.
+
+**2. RFM-Based Customer Segmentation**
+Applied RFM logic (Recency, Frequency, Monetary) to segment all
+18,484 customers. Repeat buyers (6,865) were separated from One-Time
+customers (11,619). This segmentation helps the business design
+different strategies for each group — loyalty rewards for repeat
+buyers and re-activation campaigns for one-time customers.
+
+**3. High-Value Customer Identification**
+Used a FIXED LOD PERCENTILE expression to identify the top 20% of
+customers by revenue. The analysis revealed that just 16.12% of
+customers contribute 66.40% of total revenue ($29.36M) — confirming
+the Pareto principle and highlighting which customers the business
+cannot afford to lose.
+
+**4. Customer Lifecycle Classification**
+Every customer was assigned a lifecycle stage using order count and
+recency logic — New & Active, Loyal & Active, Loyal but Inactive,
+or New but Inactive. This gives the business a clear action plan:
+retain Loyal & Active (2,980), re-engage Loyal but Inactive (4,285),
+and convert New & Active (8,838) into long-term customers.
+
+**5. Engagement Scoring**
+Classified customers into Low, Medium, and High Engagement segments
+and visualised them in a Recency vs Engagement heatmap. With an
+Active Customer Ratio of 63.94% and Repeat Purchase Ratio of 37.14%,
+the dashboard clearly shows where engagement efforts need to be focused.
+
+**6. Profitability by Region and Product**
+Built row-level profit calculations and regional breakdowns. The
+Central region leads with a 45.02% profit margin. Mountain-200 is
+the top product at $7.93M in sales. These insights help the business
+focus resources on the most profitable areas.
+
+---
+
+## 📊 Key Findings
+
+| Finding | Value |
+|---------|-------|
+| Total Customers Analysed | 18,484 |
+| Active Customers | 11,818 (63.94%) |
+| Churn Risk Customers | 7,066 (Loyal but Inactive + New but Inactive) |
+| Repeat Purchase Ratio | 37.14% |
+| High-Value Customers | 16.12% of total |
+| Revenue from Top 20% | 66.40% of $29.36M |
+| Highest Profit Region | Central — 45.02% margin |
+| Top Product by S
+
+
+
+📋 For detailed problem analysis → [View ANALYSIS.md](ANALYSIS.md)
