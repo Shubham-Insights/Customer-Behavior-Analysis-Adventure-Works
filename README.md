@@ -24,10 +24,10 @@ Adventure Works is a Microsoft sample retail database widely used for analytics 
 ## 🖼️ Dashboard Preview
 
 ### Dashboard 1 — Customer Behavior & Lifecycle Analysis
-![Dashboard 1](1st_pic_.png)
+![Dashboard 1](1st_pic_.jpeg)
 
 ### Dashboard 2 — Sales & Profitability Analysis
-![Dashboard 2](2nd_pic.png)
+![Dashboard 2](2nd_pic.jpeg)
 
 ---
 
